@@ -1,7 +1,20 @@
+#Pacman Settings
+sudo pacman -S haveged
+sudo haveged -w 1024
+sudo pacman-key --init && sudo pacman-key --populate archlinux
+sudo pkill haveged
 
 #Nemesis Sys Packages
 
 sudo pacman -S i3 dmenu xdg-user-dirs leafpad lxappearance lxdm polkit-gnome gnome-keyring networkmanager network-manager-applet compton oblogout volumeicon ncmpcpp mpd w3m rxvt-unicode
+
+#File Manager
+sudo pacman -S thunar thunar-volman thunar-archive-plugin gvfs
+
+#Archive
+sudo pacman -S zip unzip p7zip unrar xarchiver
+
+#Settings
 
 cp arch_mem/.ncmpcpp/config $HOME/.ncmpcpp/config
 sudo gpasswd -a mpd users
