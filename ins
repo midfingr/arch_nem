@@ -14,12 +14,16 @@ sudo pacman -S thunar thunar-volman thunar-archive-plugin gvfs
 #Archive
 sudo pacman -S zip unzip p7zip unrar xarchiver
 
+#Browser
+chromium
+
 #Settings
 
-cp arch_mem/.ncmpcpp/config $HOME/.ncmpcpp/config
+mkdir .ncmpcpp
+cp arch_nem/.ncmpcpp/config $HOME/.ncmpcpp/config
 sudo gpasswd -a mpd users
 chmod 710 $HOME
 sudo systemctl enable mpd.service
-sudo cp arch_mem/mpd.conf /etc/mpd.conf
+sudo cp arch_nem/mpd.conf /etc/mpd.conf
 sudo systemctl enable NetworkManager
 sudo systemctl enable lxdm
