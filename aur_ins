@@ -1,0 +1,3 @@
+#AUR FILES
+
+sudo pacman -U aur_files/*.tar.xz
