@@ -5,11 +5,14 @@ sudo pacman-key --init && sudo pacman-key --populate archlinux
 sudo pkill haveged
 
 #Nemesis Sys Packages
-
 sudo pacman -S i3 dmenu xdg-user-dirs leafpad lxappearance lxdm polkit-gnome gnome-keyring networkmanager network-manager-applet compton oblogout volumeicon ncmpcpp mpd w3m rxvt-unicode
 
 #File Manager
 sudo pacman -S pcmanfm gvfs garcon gamin
+
+#Notification
+libnotify
+xfce4-notifyd
 
 #Archive
 sudo pacman -S zip unzip p7zip unrar
@@ -22,6 +25,7 @@ sudo pacman -S ttf-liberation
 sudo pacman -S feh
 sudo pacman -S ristretto
 sudo pacman -S tumbler
+sudo pacman -S parcellite
 
 #Browser
 sudo pacman -S chromium
